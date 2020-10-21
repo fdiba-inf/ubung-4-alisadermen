@@ -12,7 +12,7 @@ public class ArrayOutput {
       numbers[index] = input.nextInt();
      }
     for (int number: numbers) {
-      System.out.print(number + " \n");
+      System.out.println(number);
       System.out.print(" ");
     }
     
