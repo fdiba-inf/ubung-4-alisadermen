@@ -6,8 +6,15 @@ public class ArrayReversal {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter array size: ");
     int a = input.nextInt();
-    double[] numbers = new double[a];
+    char[] numbers = new char[a];
+    char[] reversed = new char[numbers.length];
     System.out.println("Enter array elements: ");
-    for (int i = ; i > numbers.length; i-- ) {
-      System.out.print
+    for (int i = 0; i < numbers.length; i++ ) {
+      numbers[i] = input.next().charAt(0);
     }
+    for (int j = numbers.length - 1; j >=0; j-- ){
+
+      System.out.println(numbers[j]);
+    }
+  }
+}
