@@ -12,9 +12,10 @@ public class ArrayReversal {
     for (int i = 0; i < numbers.length; i++ ) {
       numbers[i] = input.next().charAt(0);
     }
-    for (int j = numbers.length - 1; j >=0; j-- ){
-
-      System.out.println(numbers[j]);
+    for (int i = 0; i < numbers.length; i++){
+      reversed[i] = numbers[numbers.length-1-i];
     }
+    String reversedAsString = Arrays.toString(reversed);
+    System.out.println("Reversed symbols: " + reversedAsString);
   }
 }
